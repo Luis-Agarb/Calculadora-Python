@@ -40,10 +40,12 @@ while nova_operacao == 1:
 								print('O valor da multiplicação é: ', multiplicacao);
 
 				else:
+							if segundo_numero != 0:
+								divisao = primeiro_numero / segundo_numero;
 
-							divisao = primeiro_numero / segundo_numero;
-
-							print('O valor da divisão  é: ', divisao);
+								print('O valor da divisão  é: ', divisao);
+							else:
+								print('O divisor tem que ser diferente de 0!');
 
 				continuar = input('Digite 1 para realizar uma nova operação:')
 
